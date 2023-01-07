@@ -1,0 +1,137 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #f8f8f8;
+}
+*{
+	box-sizing: border-box;
+}
+/* 导航栏样式 */
+header{
+	/* 固定定位 */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* 弹性布局 */
+	display: flex;
+	/* 将元素靠边对齐 */
+	justify-content: space-between;
+	background: #fff;
+	padding: 1px 100px;
+	z-index: 1;
+}
+header .logo{
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 2px;
+}
+header .logo1{
+	float: left;
+	width: 40px; 
+	height: 40px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+	list-style: none;
+}
+header ul li a{
+	margin: 0 15px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+a{
+	text-decoration: none;
+}
+/* 大标题 */
+#team{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.heading{
+	font-size: 50px;
+	color: #2c2c2c;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+/* 卡片 */
+.box{
+	width: 266px;
+	height: 340px;
+	background-color: #fff;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-between;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 20px;
+	position: relative;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.details{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.details img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+}
+.details strong{
+	font-weight: 500;
+	color: #141414;
+	margin-top: 10px;
+}
+.details p{
+	font-size: 0.8rem;
+	color: #7a7a7a;
+	margin: 5px 0px;
+}
+.btn{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn a{
+	color: #8b8b8b;
+	padding: 8px 32px;
+	border-radius: 20px;
+	font-size: 1rem;
+}
+.btn a:hover{
+	color: #fff;
+	background-color: #507bfc;
+	box-shadow: 2px 5px 15px rgba(80, 123, 252, 0.5);
+	transition: all ease 0.3s;
+}

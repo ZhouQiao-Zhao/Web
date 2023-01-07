@@ -1,0 +1,83 @@
+*{
+   /* 初始化 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "Poppins";
+}
+.body2{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+	/* 方便展示，满屏居中 */
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,#dfe9f3,#fff);
+}
+.box{
+    width: 1220px;
+}
+.j{
+    list-style: none;
+    position: relative;
+    width: 400px;
+    height: 260px;
+    float: left;
+    margin: 5px 10px 5px 0;
+    /* 溢出影藏 */
+    overflow: hidden;
+}
+.j img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* 过渡效果 */
+    transition: 0.25s ease-in;
+}
+.j p{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    position: absolute;
+    left: 0;
+    /* 默认移出可视范围 */
+    top: -100%;
+    font-size: 15px;
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 24px;
+}
+.j:hover img{
+    /* 悬停图片变大 */
+    transform: scale(1.1);
+}
+.j:nth-child(3){
+    margin-right: 0;
+    width: 400px;
+    height: 530px;
+}
+.j:nth-child(4),
+.j:nth-child(5){
+    margin-top: -265px;
+}
+.j:nth-child(5){
+    margin-left: 410px;
+}
+.j:nth-child(6){
+    margin-right: 1;
+    width: 400px;
+    height: 530px;
+}
+.j:nth-child(8){
+    margin-right: 0;
+}
+
+.j:nth-child(10){
+    margin-right: 0;
+}

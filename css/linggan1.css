@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins";
+}
+/* 导航栏样式 */
+header{
+	/* 固定定位 */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/* 弹性布局 */
+	display: flex;
+	/* 将元素靠边对齐 */
+	justify-content: space-between;
+	background: #fff;
+	padding: 1px 100px;
+	z-index: 1;
+}
+header .logo{
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	letter-spacing: 2px;
+}
+header .logo1{
+	float: left;
+	width: 40px; 
+	height: 40px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+	list-style: none;
+}
+header ul li a{
+	margin: 0 15px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+/* 图片页面样式 */
+.shell{
+	height: 100vh;
+	overflow-x: hidden;
+	perspective: 3px;
+}
+.shell div{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: 30px;
+	letter-spacing: 2px;
+}
+.image{
+	transform: translateZ(-1px) scale(1.6);
+	background-size: cover;
+	height: 100vh;
+	z-index: -1;
+}
+.text{
+	text-align: center;
+	/*text-indent: 4em;*/
+	word-wrap: break-word;
+	height: 50vh;
+	background-color: #fff;
+}
+.text h1{
+	color: #000000;
+}
+.heading{
+	z-index: -1;
+	transform: translateY(-30vh) translateZ(1px);
+	color: #fff;
+	font-size: 30px;
+}
